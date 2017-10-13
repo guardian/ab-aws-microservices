@@ -1,4 +1,4 @@
-name := "ab-aws-microservices"
+name := "anne-microservice-workshop"
 
 organization := "com.gu"
 
