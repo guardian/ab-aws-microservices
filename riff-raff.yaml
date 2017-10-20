@@ -22,7 +22,7 @@ deployments:
       prependStackToCloudFormationStackName: false
       cloudFormationStackName: anne-microservice-upload
       templatePath: cloudformation.yaml
-    dependencies: anne-microservice-upload
+    dependencies: [anne-microservice-upload]
   anne-microservice-upload-lambda-update:
     template: anne-microservice-workshop
     actions: [updateLambda]
