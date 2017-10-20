@@ -24,6 +24,6 @@ deployments:
       templatePath: cloudformation.yaml
     dependencies: anne-microservice-upload
   anne-microservice-upload-lambda-update:
-    template: anne-microservice-upload
+    template: anne-microservice-workshop
     actions: [updateLambda]
     dependencies: [anne-microservice-upload-cfn]
