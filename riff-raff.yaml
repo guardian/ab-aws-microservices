@@ -17,7 +17,7 @@ deployments:
     actions: [uploadLambda]
   anne-microservice-upload-cfn:
     type: cloud-formation
-    app: anne-microservice-upload
+    app: anne-microservice-workshop
     parameters:
       prependStackToCloudFormationStackName: false
       cloudFormationStackName: anne-microservice-workshop
