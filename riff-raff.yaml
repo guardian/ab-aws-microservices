@@ -15,15 +15,3 @@ deployments:
   anne-microservice-upload:
     template: anne-microservice-workshop
     actions: [uploadLambda]
-  anne-microservice-cfn:
-    type: cloud-formation
-    app: anne-microservice-workshop
-    parameters:
-      prependStackToCloudFormationStackName: false
-      cloudFormationStackName: anne-microservice-workshop
-      templatePath: cfn.yaml
-    dependencies: [anne-microservice-upload]
-  anne-microservice-lambda-update:
-    template: anne-microservice-workshop
-    actions: [updateLambda]
-    dependencies: [anne-microservice-cfn]
